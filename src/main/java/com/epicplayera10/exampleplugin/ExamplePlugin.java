@@ -33,7 +33,6 @@ public final class ExamplePlugin extends JavaPlugin {
         PaperCommandManager manager = new PaperCommandManager(this);
 
         manager.enableUnstableAPI("help");
-        manager.enableUnstableAPI("brigadier");
 
         manager.registerCommand(new ExampleCommand());
     }
