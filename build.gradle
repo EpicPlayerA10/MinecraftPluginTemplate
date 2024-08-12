@@ -28,7 +28,7 @@ dependencies {
     compileOnly "io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT"
 
     implementation 'eu.okaeri:okaeri-configs-yaml-bukkit:5.0.2'
-    implementation 'eu.okaeri:okaeri-configs-serdes-bukkit:5.0.2'
+    implementation 'eu.okaeri:okaeri-configs-serdes-bukkit:5.0.3'
     implementation 'eu.okaeri:okaeri-configs-serdes-commons:5.0.2'
     implementation 'eu.okaeri:okaeri-configs-validator-okaeri:5.0.2'
     implementation 'eu.okaeri:okaeri-placeholders-bukkit:5.0.1'
