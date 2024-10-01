@@ -37,9 +37,9 @@ dependencies {
 }
 
 shadowJar {
-    relocate("eu.okaeri", "com.epicplayera10.riftcore.libs.eu.okaeri")
-    relocate("co.aikar.commands", "com.epicplayera10.riftcore.libs.acf")
-    relocate("co.aikar.locales", "com.epicplayera10.riftcore.libs.locales")
+    relocate("eu.okaeri", "com.epicplayera10.exampleplugin.libs.eu.okaeri")
+    relocate("co.aikar.commands", "com.epicplayera10.exampleplugin.libs.acf")
+    relocate("co.aikar.locales", "com.epicplayera10.exampleplugin.libs.locales")
 }
 
 assemble.dependsOn(shadowJar)
