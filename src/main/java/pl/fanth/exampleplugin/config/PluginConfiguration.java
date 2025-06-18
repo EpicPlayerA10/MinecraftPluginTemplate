@@ -1,4 +1,4 @@
-package com.epicplayera10.exampleplugin.config;
+package pl.fanth.exampleplugin.config;
 
 import eu.okaeri.configs.OkaeriConfig;
 import eu.okaeri.configs.annotation.Comment;

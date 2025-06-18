@@ -1,4 +1,4 @@
-package com.epicplayera10.exampleplugin.commands;
+package pl.fanth.exampleplugin.commands;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.CommandHelp;

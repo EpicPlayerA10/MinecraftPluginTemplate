@@ -1,10 +1,10 @@
-package com.epicplayera10.exampleplugin;
+package pl.fanth.exampleplugin;
 
 import co.aikar.commands.PaperCommandManager;
-import com.epicplayera10.exampleplugin.commands.ExampleCommand;
-import com.epicplayera10.exampleplugin.config.ConfigurationFactory;
-import com.epicplayera10.exampleplugin.config.DataConfiguration;
-import com.epicplayera10.exampleplugin.config.PluginConfiguration;
+import pl.fanth.exampleplugin.commands.ExampleCommand;
+import pl.fanth.exampleplugin.config.ConfigurationFactory;
+import pl.fanth.exampleplugin.config.DataConfiguration;
+import pl.fanth.exampleplugin.config.PluginConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;

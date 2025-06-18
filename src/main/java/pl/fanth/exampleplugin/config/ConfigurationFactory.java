@@ -1,6 +1,6 @@
-package com.epicplayera10.exampleplugin.config;
+package pl.fanth.exampleplugin.config;
 
-import com.epicplayera10.exampleplugin.ExamplePlugin;
+import pl.fanth.exampleplugin.ExamplePlugin;
 import eu.okaeri.configs.ConfigManager;
 import eu.okaeri.configs.serdes.commons.SerdesCommons;
 import eu.okaeri.configs.validator.okaeri.OkaeriValidator;

@@ -3,7 +3,7 @@ plugins {
     id "com.gradleup.shadow" version "8.3.6"
 }
 
-group = 'com.epicplayera10'
+group = 'pl.fanth'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -37,9 +37,9 @@ dependencies {
 }
 
 shadowJar {
-    relocate("eu.okaeri", "com.epicplayera10.exampleplugin.libs.eu.okaeri")
-    relocate("co.aikar.commands", "com.epicplayera10.exampleplugin.libs.acf")
-    relocate("co.aikar.locales", "com.epicplayera10.exampleplugin.libs.locales")
+    relocate("eu.okaeri", "pl.fanth.exampleplugin.libs.eu.okaeri")
+    relocate("co.aikar.commands", "pl.fanth.exampleplugin.libs.acf")
+    relocate("co.aikar.locales", "pl.fanth.exampleplugin.libs.locales")
 }
 
 assemble.dependsOn(shadowJar)
