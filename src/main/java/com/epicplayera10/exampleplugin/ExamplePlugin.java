@@ -4,13 +4,13 @@ import co.aikar.commands.PaperCommandManager;
 import com.epicplayera10.exampleplugin.commands.ExampleCommand;
 import com.epicplayera10.exampleplugin.config.ConfigurationFactory;
 import com.epicplayera10.exampleplugin.config.DataConfiguration;
+import com.epicplayera10.exampleplugin.config.PluginConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 
 public final class ExamplePlugin extends JavaPlugin {
-    private final File dataConfigurationFile = new File(this.getDataFolder(), "data.yml");
-
+    private PluginConfiguration pluginConfiguration;
     private DataConfiguration dataConfiguration;
 
     private static ExamplePlugin instance;
@@ -19,7 +19,8 @@ public final class ExamplePlugin extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        this.dataConfiguration = ConfigurationFactory.createDataConfiguration(this.dataConfigurationFile);
+        this.pluginConfiguration = ConfigurationFactory.createPluginConfiguration(new File(this.getDataFolder(), "config.yml"));
+        this.dataConfiguration = ConfigurationFactory.createDataConfiguration(new File(this.getDataFolder(), "data.yml"));
 
         registerCommands();
     }
@@ -41,11 +42,16 @@ public final class ExamplePlugin extends JavaPlugin {
         return instance;
     }
 
+    public PluginConfiguration pluginConfiguration() {
+        return pluginConfiguration;
+    }
+
     public DataConfiguration dataConfiguration() {
         return dataConfiguration;
     }
 
     public void reloadConfiguration() {
+        this.pluginConfiguration.load();
         this.dataConfiguration.load();
     }
 }
