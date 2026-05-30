@@ -37,6 +37,7 @@ dependencies {
 }
 
 shadowJar {
+    archiveClassifier = ''
     relocate("eu.okaeri", "pl.fanth.exampleplugin.libs.eu.okaeri")
     relocate("co.aikar.commands", "pl.fanth.exampleplugin.libs.acf")
     relocate("co.aikar.locales", "pl.fanth.exampleplugin.libs.locales")
