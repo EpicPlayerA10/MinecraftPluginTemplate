@@ -19,8 +19,8 @@ public final class ExamplePlugin extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        this.pluginConfiguration = ConfigurationFactory.createPluginConfiguration(new File(this.getDataFolder(), "config.yml"));
-        this.dataConfiguration = ConfigurationFactory.createDataConfiguration(new File(this.getDataFolder(), "data.yml"));
+        this.pluginConfiguration = ConfigurationFactory.createConfiguration(PluginConfiguration.class, new File(this.getDataFolder(), "config.yml"));
+        this.dataConfiguration = ConfigurationFactory.createConfiguration(DataConfiguration.class, new File(this.getDataFolder(), "data.yml"));
 
         registerCommands();
     }
