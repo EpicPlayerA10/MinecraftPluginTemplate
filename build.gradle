@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id "com.gradleup.shadow" version "8.3.6"
+    id "com.gradleup.shadow" version "9.3.1"
 }
 
 group = 'pl.fanth'
@@ -21,7 +21,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly "io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT"
+    compileOnly "io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT"
 
     implementation 'eu.okaeri:okaeri-configs-yaml-bukkit:6.1.0-beta.4'
     implementation 'eu.okaeri:okaeri-configs-serdes-bukkit:6.1.0-beta.4'
