@@ -48,3 +48,4 @@ gradle-app.setting
 .classpath
 
 .idea
+.claude/settings.local.json
